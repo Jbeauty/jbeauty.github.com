@@ -49,10 +49,10 @@ bing_verify:
 # Links to include in footer navigation
 # For external links add external: true
 links:
-  - title: 主页
+  - title: <i class="icon-book"></i>主页
     url: /
     external: false
-    icon: home
+    icon: icon-book
   - title: <i class="icon-book"></i> 归档
     url: /documentation
   - title: 分类
