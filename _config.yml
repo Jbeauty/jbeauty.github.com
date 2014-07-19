@@ -49,17 +49,17 @@ bing_verify:
 # Links to include in footer navigation
 # For external links add external: true
 links:
-  - title: <i class="icon-book"></i>主页
+  - title: <i class="icon-home"></i> 主页
     url: /
     external: false
     icon: icon-book
   - title: <i class="icon-book"></i> 归档
     url: /documentation
-  - title: 分类
+  - title: <i class="icon-list"></i> 分类
     url: /categories
-  - title: 标签
+  - title: <i class="icon-tag"></i>  标签
     url: /tags
-  - title: 关于
+  - title: <i class="icon-map-marker"></i> 关于
     url: /hossain-mohd-faysal
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
