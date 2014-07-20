@@ -4,7 +4,7 @@ title: javascript DOM 编程艺术 笔记一
 description:  共享onload事件
 categories: personal
 comments: true
-tags: [Jekyll, HMFAYSAL OMEGA]
+tags: [blogging,notes]
 ---
 
 
