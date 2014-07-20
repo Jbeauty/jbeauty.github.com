@@ -48,10 +48,10 @@ function addLoadEvent(func){
 操作:把现有的```window.onload```事件处理函数存入变量```oldOnload```中；如果这个事件处理函数还没绑定任何函数，就把新函数添加进去；如果已经绑定了，则追加到现有函数的末尾。
 然后再引用```addLoadEvent```函数添加你的函数。这是一个具有弹性的方法，不论需要添加多少函数，在页面加载完毕时都可以得到执行。
 
-<pre><code>
+
   addLoadEvent(firstFunction);
   addLoadEvent(secondFunction);
-</code></pre>
+
 
 
 
