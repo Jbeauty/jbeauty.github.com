@@ -12,7 +12,7 @@ description:  共享onload事件
 <pre><code>
 
  window.onload=firstFunction（）;
- window.onload=secondFunction（）;// 将覆盖 firstFunction.
+ window.onload=secondFunction（）;//  将覆盖 firstFunction.
 
 <pre><code>
 
