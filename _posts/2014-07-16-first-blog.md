@@ -2,7 +2,9 @@
 layout: post
 title: 原生JS实现几个常用HTML DOM增强API
 description:  常用的javascript 工具函数
-
+tags: [javascript]
+comments: true
+categories: personal
 ---
 
 **getElementsByClassName()**

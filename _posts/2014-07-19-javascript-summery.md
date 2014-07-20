@@ -4,7 +4,7 @@ title: javascript 学习资料汇总
 description: 博主平时学习用到的一些资料汇总
 categories: personal
 comments: true
-tags: [blogging,notes]
+tags: [javascript]
 ---
 
 

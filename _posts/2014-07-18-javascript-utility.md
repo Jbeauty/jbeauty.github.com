@@ -2,9 +2,9 @@
 layout: post
 title: javascript DOM 编程艺术 笔记一
 description:  共享onload事件
-categories: personal
+tags: [javascript]
 comments: true
-tags: [blogging,notes]
+categories: personal
 ---
 
 
