@@ -1,7 +1,7 @@
 ---
 layout: post
-title: javascript DOM 编程艺术 笔记一
-description:  共享onload事件
+title: javascript 学习资料汇总
+description: 博主平时学习用到的一些资料汇总
 categories: personal
 comments: true
 tags: [blogging,notes]
@@ -9,6 +9,12 @@ tags: [blogging,notes]
 
 
 ##javascript 学习资料汇总
+
+###工具
+
+* [神器webstorm](http://www.jetbrains.com/webstorm/)    
+* [在线IDE RunJs](http://runjs.cn/) 
+* [在线IDE Jsfiddle](http://jsfiddle.net/) 
 
 ###书籍
 
@@ -27,9 +33,4 @@ tags: [blogging,notes]
 
 * [V2EX](http://v2ex.com/) 
 
-###工具类
-
-* [神器webstorm](http://www.jetbrains.com/webstorm/)    
-* [在线IDE RunJs](http://runjs.cn/) 
-* [在线IDE Jsfiddle](http://jsfiddle.net/) 
 
