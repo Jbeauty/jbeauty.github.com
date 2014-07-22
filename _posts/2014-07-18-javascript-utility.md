@@ -1,8 +1,7 @@
 ---
 layout: post
 title: javascript DOM 编程艺术 笔记一
-description: 《javascript DOM 编程艺术》是一本很好的javascript入门书，这篇博文是我阅读 
-这本书后，对共享onload事件，所做地一些笔记。
+description: 《javascript DOM 编程艺术》是一本很好的javascript入门书，这篇博文是我阅读这本书后，对共享onload事件，所做地一些笔记。
 tags: [javascript]
 comments: true
 categories: personal
