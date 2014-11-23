@@ -8,9 +8,8 @@ categories: personal
 ---
 
 
-#Less is more than css
 
-@(标签)[less|css|动态样式语言]
+
 ###关于less
   虽然一直以来css的书写习惯会让我们不太适应less，但只要你有一些css的语法基础和编程语法基础，相信学习less会是一件轻而易举的事情，偶尔换换书写方式也是别有一番趣味，更何况在代码繁多重复时，less确实可以让我们偷偷懒~
 
@@ -20,25 +19,25 @@ categories: personal
 
 
 -------------------
-###1、 变量
+**1、 变量**
 Less 允许我们定义一个变量来保存值，这样可以方便的改变应用到变量的样式,然后应用到样式中，这样只要改变你定义的变量参数值就可以达到改变全局的效果。
 
 **语法：**@变量名：值；
-``` python
+```
 @color：#ccc；
 .box{color:@color}
 p{colorl:@color}
 ```
 **编译之后**
-``` python
+<pre><code>
 .box{color：#ccc；}
 p{color:#ccc;}
-```
+</pre></code>
 note：Less 的变量叫做```常量```更加合适，因为它只能被定义一次。
 ### 2、混合
 跟 javascript 的函数类似，可以定义带参数或者不带参数的混合之后，可以当做函数调用一样使用它。有了混合，我们就可以抽象出一些常用的代码以便复用了
 - **没有传入参数**
-``` python
+``` 
 .roundedCorners(@radius:5px){
     -moz-border-radius: @radius;
 	-webkit-border-radius: @radius;
@@ -53,7 +52,7 @@ note：Less 的变量叫做```常量```更加合适，因为它只能被定义�
 }
 ```
 **编译之后:**不传参数
-``` python
+``` 
 .corner-button{
 	width:100px;
 	height:100px;
@@ -64,7 +63,7 @@ note：Less 的变量叫做```常量```更加合适，因为它只能被定义�
 }
 ``` 
 - **传入参数**
-``` python
+``` 
 .roundedCorners(@radius:5px){
     -moz-border-radius: @radius;
 	-webkit-border-radius: @radius;
@@ -79,7 +78,7 @@ note：Less 的变量叫做```常量```更加合适，因为它只能被定义�
 }
 ```
 **编译之后**
-``` python
+``` 
 .corner-button{
     width:100px;
     height:100px;
@@ -91,7 +90,7 @@ note：Less 的变量叫做```常量```更加合适，因为它只能被定义�
 - **不带任何参数**
 
 
-``` python
+``` 
 .wrap(){
 	text-wrap: wrap;
 	white-space: pre-wrap;
@@ -104,7 +103,7 @@ pre {
 ```
 **编译之后**
 
-``` python
+``` 
 pre {
 	text-wrap: wrap;
 	white-space: pre-wrap;
