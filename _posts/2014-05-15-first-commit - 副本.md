@@ -1,15 +1,12 @@
 ---
 layout: post
-title: Less is more than css
-description:  使用 Less 编写 CSS 已经有一段时间了，今天终于抽出空来对总结一下。
-tags: [less]
-comments: true
+title: less is more than css
+description: 使用 Less 编写 CSS 已经有一段时间了，今天终于抽出空来对总结一下。
+headline: "Let's Fire up the Engines"
 categories: personal
----
-
-
-
-
+tags: 
+  - blogging
+  
 **关于less**
   虽然一直以来css的书写习惯会让我们不太适应less，但只要你有一些css的语法基础和编程语法基础，相信学习less会是一件轻而易举的事情，偶尔换换书写方式也是别有一番趣味，更何况在代码繁多重复时，less确实可以让我们偷偷懒~
 
@@ -25,7 +22,7 @@ Less 允许我们定义一个变量来保存值，这样可以方便的改变应
 **语法：**@变量名：值；
 ```
 @color：#ccc；
-.box{color:@color}	
+.box{color:@color}  
 p{colorl:@color}
 ```
 **编译之后**
@@ -40,41 +37,41 @@ note：Less 的变量叫做```常量```更加合适，因为它只能被定义�
 ``` 
 .roundedCorners(@radius:5px){
     -moz-border-radius: @radius;
-	-webkit-border-radius: @radius;
-	border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
 }
 .corner-button{
-	width:100px;
-	height:100px;
-	background-color:blue;
-	
-	.roundedCorners();//调用混合，因为定义的时候给了默认值5px，所以在没有传入新的值的时候都为5px
+  width:100px;
+  height:100px;
+  background-color:blue;
+  
+  .roundedCorners();//调用混合，因为定义的时候给了默认值5px，所以在没有传入新的值的时候都为5px
 }
 ```
 **编译之后:**不传参数
 ``` 
 .corner-button{
-	width:100px;
-	height:100px;
-	background-color:blue;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border-radius:5px;
+  width:100px;
+  height:100px;
+  background-color:blue;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
 }
 ``` 
 - **传入参数**
 ``` 
 .roundedCorners(@radius:5px){
     -moz-border-radius: @radius;
-	-webkit-border-radius: @radius;
-	border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
 }
 .corner-button{
-	width:100px;
-	height:100px;
-	background-color:blue;
-	
-	.roundedCorners(10px);//传入参数10px
+  width:100px;
+  height:100px;
+  background-color:blue;
+  
+  .roundedCorners(10px);//传入参数10px
 }
 ```
 **编译之后**
@@ -82,33 +79,33 @@ note：Less 的变量叫做```常量```更加合适，因为它只能被定义�
 .corner-button{
     width:100px;
     height:100px;
-    bakgroung-color:blue;	
+    bakgroung-color:blue; 
     -moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	border-radius:10px;}
+  -webkit-border-radius:10px;
+  border-radius:10px;}
 ```
 - **不带任何参数**
 
 
 ``` 
 .wrap(){
-	text-wrap: wrap;
-	white-space: pre-wrap;
-	white-space: -moz-pre-wrap;
-	word-wrap: break-word;
+  text-wrap: wrap;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word;
 }
 pre {
-	.wrap;
+  .wrap;
 }
 ```
 **编译之后**
 
 ``` 
 pre {
-	text-wrap: wrap;
-	white-space: pre-wrap;
-	white-space: -moz-pre-wrap;
-	word-wrap: break-word;
+  text-wrap: wrap;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word;
 }
 ```
 ###3、匹配模式
@@ -116,14 +113,14 @@ pre {
 
 ```
 .triangle(@top,@width:5px,@color:#ccc){
-	border-width:@width;
-	border-color:transparent transparent @color transparent;
-	border-style:dashed dashed soild dashed; //兼容 IE6 
+  border-width:@width;
+  border-color:transparent transparent @color transparent;
+  border-style:dashed dashed soild dashed; //兼容 IE6 
 }
 .triangle(@bottom,@width:5px,@color:#ccc){
-	border-width:@width;
-	border-color:@color transparent transparent transparent;
-	border-style:soild dashed dashed dashed;
+  border-width:@width;
+  border-color:@color transparent transparent transparent;
+  border-style:soild dashed dashed dashed;
 }
 ```
 上面代码是根据传入参数来生成一个三角形，如果调用```.triangle(top)```生成的就是朝上的三角形，如果调用```.triangle(bottom)```生成的就是朝下的三角形，
@@ -133,8 +130,8 @@ pre {
 **html代码**
 ```
 <div id="header">
-					<h1><a href="">jbeauty</a></h1>
-					<p>记述前端那些</p>
+          <h1><a href="">jbeauty</a></h1>
+          <p>记述前端那些</p>
 </div>
 ```
 
@@ -158,7 +155,7 @@ note:``` & ```符号的使用—如果你想写串联选择器，而不是写后
 
 ####未完待续······
 
-			
+      
 
 
 
